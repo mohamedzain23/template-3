@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+</head>
+<body>
+    
+<!-- ///////////////////////////////////////////////////header/////////////////////////////////////////////////////////////// -->
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark navi-bar fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)"> <i class="fas fa-code" style="font-size: 35px;"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"><i class="fas fa-home"></i> home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"><i class="fas fa-list"></i> languages</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle nav-drop-btn" data-bs-toggle="dropdown">
+              courses
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">html</a></li>
+              <li><a class="dropdown-item" href="#">css</a></li>
+              <li><a class="dropdown-item" href="#">javascript</a></li>
+              <li><a class="dropdown-item" href="#">java</a></li>
+              <li><a class="dropdown-item" href="#">python</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"><i class="fas fa-cog"></i> settings</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-primary" type="button">Search</button>
+        <button class="btn btn-outline-primary login-btn" type="button">log in</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- /////////////////////////////////////////////////////////scroll section////////////////////////////////////////////////////// -->
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active scroll-son">
+        <img src="images/scroll/11.jpg" alt="Los Angeles" width="100%" height="100%">
+        <div class="carousel-caption scroll-caption">
+          <h2>html</h2>
+        <button class="btn btn-danger" type="button">view course</button>
+        </div>
+      </div>
+      <div class="carousel-item scroll-son">
+        <img src="images/scroll/22.jpg" alt="Los Angeles" width="100%" height="100%">
+        <div class="carousel-caption scroll-caption">
+          <h2>css</h2>
+        <button class="btn btn-primary" type="button">view course</button>
+        </div>
+      </div>
+      <div class="carousel-item scroll-son">
+        <img src="images/scroll/33.jpg" alt="Los Angeles" width="100%" height="100%">
+        <div class="carousel-caption scroll-caption">
+          <h2>javascript</h2>
+        <button class="btn btn-warning" type="button">view course</button>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="carousel-item">
+  <img src="images/scroll/1.jpg" alt="Los Angeles" width="100%" height="100%">
+  <div class="carousel-caption scroll-caption">
+    <h3>Los Angeles</h3>
+    <p>We had such a great time in LA!</p>
+  </div>
+</div>
+
+<!-- //////////////////////////////////////////////////////////welcome section//////////////////////////////////////////////////////////////////// -->
+    
+<div class="welcome-parent">
+  <div class="welcome-son">
+    <br>
+  <p class="h1">Welcome</p>
+  <div class="welcome-pra">
+    programming without language and without code.
+  </div>
+  <button type="button" class="btn btn-primary welcome-btn">learn more</button>
+  </div>
+</div>
+<!-- /////////////////////////////////////////////////////////////language section////////////////////////////////////////////////////////// -->
+<div class="language-parent">
+  <div class="language-title">programming language</div>
+</div>
+
+
+<div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="btn language-collapse-heder" data-bs-toggle="collapse" href="#collapseOne">
+        python programmong language
+        <div class="language-heder-arrow"><i class="fas fa-chevron-down"></i></div>
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body language-collapse-div">
+        Python is powerful... and fast, plays well with others,runs everywhere, is friendly & easy to learn, is Open.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn language-collapse-heder" data-bs-toggle="collapse" href="#collapseTwo">
+        java programming language
+        <div class="language-heder-arrow"><i class="fas fa-chevron-down"></i></div>
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body language-collapse-div">
+        Java is a powerful general-purpose programming language. It is used to d
+        evelop desktop and mobile applications, big data processing, embedded systems, and so on. According to Oracle, the company th
+        at owns Java, Java runs on 3 billion devices worldwide, which makes Java one of the most popular programming languages...
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn language-collapse-heder" data-bs-toggle="collapse" href="#collapseThree">
+        java script programming language
+        <div class="language-heder-arrow"><i class="fas fa-chevron-down"></i></div>
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body language-collapse-div">
+        
+        JavaScript is a scripting or programming language that allows you to implement complex features on web pages.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="language-title">python is very easy</div>
+<div class="language-easy-parent">
+  <div class="language-easy-words container-fluid">learn more about python from W3schools <a href="https://www.w3schools.com/python/default.asp" target="_blank">here</a></div>
+  
+  
+  <div class="language-easy-code container">  name = input('enter your name: '); print("Hello" + name)</div>
+  <button class="copy-btn" data-clipboard-target="#copy-text">
+    <span class="tooltiptext">Copy to clipboard</span>
+    Copy code
+  </button>
+</div>
+
+
+<div class="language-title">Java is very easy</div>
+<div class="language-easy-parent">
+  <div class="language-easy-words container-fluid">learn more about java from W3schools <a href="https://www.w3schools.com/java/default.asp" target="_blank">here</a></div>
+  
+  
+  <div class="language-easy-code container">  System.out.println("Hello World!");</div>
+  <button class="copy-btn" data-clipboard-target="#copy-text">
+    <span class="tooltiptext">Copy to clipboard</span>
+    Copy code
+  </button>
+</div>
+
+
+
+<div class="language-title">Javascript is very easy</div>
+<div class="language-easy-parent">
+  <div class="language-easy-words container-fluid">learn more about javascript from W3schools <a href="https://www.w3schools.com/js/default.asp" target="_blank">here</a></div>
+  
+  
+  <div class="language-easy-code container">console.log("Welcome to Programiz!");</div>
+  <button class="copy-btn" data-clipboard-target="#copy-text">
+    <span class="tooltiptext">Copy to clipboard</span>
+    Copy code
+  </button>
+</div>
+
+<!-- ////////////////////////////////////////////////////////////cut1 section///////////////////////////////////////////////////////////////////////////////// -->
+<div class="cut1"></div>
+<!-- /////////////////////////////////////////////////////////////good basic////////////////////////////////////////////////////////////////////////// -->
+<div class="good-parent">
+  <div class="good-title">
+    languages
+  </div>
+  <div class="good-big-div">
+    <div class="good-small-div">
+      <div class="good-small-div-pic">
+        <img src="images/1.png" alt="" width="100%" height="100%">
+    </div>
+    <h2 style="text-align: center; margin-top: 10px;  color: white;">html</h2>
+    <div style="font-size: 23px; width: 90%; margin: auto; color: white;">
+      html from zero to hero
+    </div>
+    <button class="btn btn-primary good-btn">download the book</button>
+  </div>
+    <div class="good-small-div">
+      <div class="good-small-div-pic">
+        <img src="images/2.png" alt="" width="100%" height="100%">
+    </div>
+    <h2 style="text-align: center; margin-top: 10px;  color: white;">html</h2>
+    <div style="font-size: 23px; width: 90%; margin: auto; color: white;">
+      css from zero to hero
+    </div>
+    <button class="btn btn-primary good-btn">download the book</button>
+  </div>
+    <div class="good-small-div">
+      <div class="good-small-div-pic">
+        <img src="images/3.png" alt="" width="100%" height="100%">
+    </div>
+    <h2 style="text-align: center; margin-top: 10px;  color: white;">html</h2>
+    <div style="font-size: 23px; width: 90%; margin: auto; color: white;">
+      javascript from zero to hero
+    </div>
+    <button class="btn btn-primary good-btn">download the book</button>
+  </div>
+    <div class="good-small-div">
+      <div class="good-small-div-pic">
+        <img src="images/4.png" alt="" width="100%" height="100%">
+    </div>
+    <h2 style="text-align: center; margin-top: 10px;  color: white;">html</h2>
+    <div style="font-size: 23px; width: 90%; margin: auto; color: white;">
+      java from zero to hero
+    </div>
+    <button class="btn btn-primary good-btn">download the book</button>
+  </div>
+  </div>
+  <div class="good-big-div">
+    <div class="good-small-div">
+      <div class="good-small-div-pic">
+        <img src="images/5.jpg" alt="" width="100%" height="100%">
+    </div>
+    <h2 style="text-align: center; margin-top: 10px;  color: white;">html</h2>
+    <div style="font-size: 23px; width: 90%; margin: auto; color: white;">
+      python from zero to hero
+    </div>
+    <button class="btn btn-primary good-btn">download the book</button>
+  </div>
+    <div class="good-small-div">
+      <div class="good-small-div-pic">
+        <img src="images/6.png" alt="" width="100%" height="100%">
+    </div>
+    <h2 style="text-align: center; margin-top: 10px;  color: white;">html</h2>
+    <div style="font-size: 23px; width: 90%; margin: auto; color: white;">
+      bootstrap from zero to hero
+    </div>
+    <button class="btn btn-primary good-btn">download the book</button>
+  </div>
+    <div class="good-small-div">
+      <div class="good-small-div-pic">
+        <img src="images/7.png" alt="" width="100%" height="100%">
+    </div>
+    <h2 style="text-align: center; margin-top: 10px;  color: white;">html</h2>
+    <div style="font-size: 23px; width: 90%; margin: auto; color: white;">
+      json from zero to hero
+    </div>
+    <button class="btn btn-primary good-btn">download the book</button>
+  </div>
+  </div>
+</div>
+<!-- /////////////////////////////////////////////////////////////cut2 section//////////////////////////////////////////////////////////////// -->
+<div class="cut2"></div>
+<!-- //////////////////////////////////////////////////////////thanks section////////////////////////////////////////////////////////////////// -->
+<div class="thanks-parent">
+  <div class="thanks-title">
+    thanks for
+  </div>
+  <div class="thanks-son">
+    <div class="thanks-divs">
+      <div class="thanks-pic"><img src="images/scroll/99.jpg" alt="" width="100%" height="100%"></div>
+      <div class="thanks-words">Eng : mohamed zain ❤</div>
+    </div>
+    <div class="thanks-divs">
+      <div class="thanks-pic"><img src="images/scroll/99.jpg" alt="" width="100%" height="100%"></div>
+      <div class="thanks-words">Eng : mohamed zain ❤</div>
+    </div>
+    <div class="thanks-divs">
+      <div class="thanks-pic"><img src="images/scroll/99.jpg" alt="" width="100%" height="100%"></div>
+      <div class="thanks-words">Eng : mohamed zain ❤</div>
+    </div>
+  </div>
+  </div>
+  <div style="width: 100%; height: 1.5px; background-color: rgb(71, 71, 71);"></div>
+<!-- //////////////////////////////////////////////////////////join section///////////////////////////////////////////////////////////////// -->
+<div class="join-parent">
+  <div class="join-title">
+    join us
+  </div>
+  <div class="join-son">
+    <div class="join-divs">
+      <h2 style="text-align: center; margin-top: 10px; color: #ffffff;">join now</h2>
+      <div class="jin-icon-circle" 
+      style="margin: 5px auto; width: 50px; height: 50px; border-radius: 50%; 
+      background-color:  #3b5998; cursor: pointer; color: #ffffff; line-height: 
+      50px; font-size: 35px; text-align: center;">
+      <i class="fab fa-facebook-f"></i></div>
+      <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none; text-align: center; margin: auto; font-size: 23px; display: block;">facebook</a>
+    </div>
+    <div class="join-divs">
+      <h2 style="text-align: center; margin-top: 10px; color: #ffffff;">join now</h2>
+      <div class="jin-icon-circle" 
+      style="margin: 5px auto; width: 50px; height: 50px; border-radius: 50%; 
+      background: linear-gradient(30deg, rgb(251, 255, 0), red, #6f00ff);  cursor: pointer; color: #ffffff; line-height: 
+      50px; font-size: 35px; text-align: center;">
+      <i class="fab fa-instagram"></i></div>
+      <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none; text-align: center; margin: auto; font-size: 23px; display: block;">instgram</a>
+    </div>
+    <div class="join-divs">
+      <h2 style="text-align: center; margin-top: 10px; color: #ffffff;">join now</h2>
+      <div class="jin-icon-circle" 
+      style="margin: 5px auto; width: 50px; height: 50px; border-radius: 50%; 
+      background-color: 	#1DA1F2; cursor: pointer; color: #ffffff; line-height: 
+      50px; font-size: 35px; text-align: center;">
+      <i class="fab fa-twitter"></i></div>
+      <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none; text-align: center; margin: auto; font-size: 23px; display: block;">twitter</a>
+    </div>
+    <div class="join-divs">
+      <h2 style="text-align: center; margin-top: 10px; color: #ffffff;">join now</h2>
+      <div class="jin-icon-circle" 
+      style="margin: 5px auto; width: 50px; height: 50px; border-radius: 50%; 
+      background-color: #0072b1; cursor: pointer; color: #ffffff; line-height: 
+      50px; font-size: 35px; text-align: center;">
+      <i class="fab fa-linkedin-in"></i></div>
+      <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none; text-align: center; margin: auto; font-size: 23px; display: block;">linkedin</a>
+    </div>
+  </div>
+</div>
+<!-- ///////////////////////////////////////////////////////////////////copy right section///////////////////////////////////////////////////////// -->
+<div class="copy-parent">
+  <div class="copy-son">
+    <div class="copy-divs">
+      <hr style="color: gray; height: 1.5px;">
+      <div class="copy-div-icon"><i class="fab fa-facebook-f"></i></div>
+      <div class="copy-div-title">Good Company</div>
+      <hr style="color: gray; height: 1.5px;">
+      <div class="copy-div-words">Tel : 000-000-000</div>
+      <div class="copy-div-words">Address : EGYPT</div>
+      <div class="copy-div-words">tel : 0000-000-00</div>
+    </div>
+    <div class="copy-divs">
+      <hr style="color: gray; height: 1.5px;">
+      <div class="copy-div-icon"><i class="fab fa-facebook-f"></i></div>
+      <div class="copy-div-title">Good Company</div>
+      <hr style="color: gray; height: 1.5px;">
+      <div class="copy-div-words">Tel : 000-000-000</div>
+      <div class="copy-div-words">Address : EGYPT</div>
+      <div class="copy-div-words">tel : 0000-000-00</div>
+    </div>
+    <div class="copy-divs">
+      <hr style="color: gray; height: 1.5px;">
+      <div class="copy-div-icon"><i class="fab fa-facebook-f"></i></div>
+      <div class="copy-div-title">Good Company</div>
+      <hr style="color: gray; height: 1.5px;">
+      <div class="copy-div-words">Tel : 000-000-000</div>
+      <div class="copy-div-words">Address : EGYPT</div>
+      <div class="copy-div-words">tel : 0000-000-00</div>
+    </div>
+  </div>
+  <div class="copy second-son">
+
+  </div>
+  <hr style="color: gray; height: 1.5px;">
+  <div class="copy-right">Copyright © 2020 Shaimaa Hassan Elsaeed, Good Company. All rights</div>
+</div>
+
+
+
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
